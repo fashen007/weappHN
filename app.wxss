@@ -1,0 +1,24 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+.inline-bl {
+  display: inline-block;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.color-blue{
+  color:blue;
+}
+.color-gray{
+  color:gray;
+}

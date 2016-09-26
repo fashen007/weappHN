@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='header'>
+    <view bindtap="logoTap" class='img-wrap inline-bl'>
+      <image class='img' mode="{{header.heardImage.mode}}" src="{{header.heardImage.src}}"></image>
+    </view>
+    <text class='head-name inline-bl'>Hacker News</text>
+    <view class='copy-right inline-bl'>build by spademan</view>
+  </view>
+  <view class="new-cont">
+    <view class='new-list' wx:for="{{listData}}">
+      <text class='order'>{{index}}</text>
+      <view class='title'>{{listData.title}} <text class='color-gray'>({{listData.sourec}})</text></view>
+      <view class='discript'><text>{{listData.disript}}</text> | <text>{{listData.time}}</text></view>
+    </view>
+  </view>
+  <!--<view  bindtap="bindViewTap" class="userinfo">
+     
+  </view>-->
+<button type="default" class='col-btn' bindtap="actionSheetTap">栏目</button>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+    <block wx:for-items="{{actionSheetItems}}">
+        <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>
+    </block>
+    <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+/**index.wxss**/
+.header{
+  position: relative;
+  width:100%;
+  background-color: #f60;
+  height: 28px;
+}
+.header .img-wrap {
+  border: 1px solid #fff;
+  margin: 2px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.header .img-wrap .img{
+  width:20px;
+  height: 20px;
+  vertical-align: middle;
+} 
+.header .head-name {
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+.copy-right{
+  line-height: 28px;
+  position: absolute;
+  right:0;
+  color:#fff;
+  font-size: 11px;
+}
+.col-btn{
+  position: fixed;
+  bottom: 100px;
+  width: 100%;
+}
